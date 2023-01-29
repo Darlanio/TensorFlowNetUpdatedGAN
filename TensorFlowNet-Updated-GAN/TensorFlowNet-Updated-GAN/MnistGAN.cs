@@ -9,7 +9,7 @@ using static Tensorflow.Binding;
 using static Tensorflow.KerasApi;
 
 
-namespace SciSharp_TensorFlowNet_Missing_TrainableVariables
+namespace TensorFlowNet_Updated_GAN
 {
     internal class MnistGAN
     {
@@ -148,6 +148,7 @@ namespace SciSharp_TensorFlowNet_Missing_TrainableVariables
 
             Console.WriteLine("D:" + D.TrainableVariables.Count());
             Console.WriteLine("G:" + G.TrainableVariables.Count()); // 8 with SciSharp-repos, 0 with NuGets
+            Console.ReadLine();
 
             for (var i = 0; i <= epochs; i++)
             {
